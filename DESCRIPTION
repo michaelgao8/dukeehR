@@ -1,0 +1,9 @@
+Package: DukeehR
+Title: Processing for EHR (Written for Duke Health)
+Version: 0.0.0.1000
+Authors@R: person("Michael", "Gao", email = "michaelgao8@gmail.com", role = c("aut", "cre"))
+Description: EHR data often requires a large amount of processing before it can be used for analysis. This package aims to streamline some common ways to process EHR data, such as deidentifying data, processing laboratory values, medications, and diagnosis codes. This package was initially conceived of and developed by members of the Duke Institute for Health Innovation
+Depends: R (>= 3.3.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
