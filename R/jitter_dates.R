@@ -13,7 +13,7 @@
 
 jitter_dates <-
   function(dataset, keycol_name, date_cols, direction = "backward", lookup){
-
+    
     
     # Convert Dates -----------------------------------------------------
     # TODO: change this to an actual boolean
