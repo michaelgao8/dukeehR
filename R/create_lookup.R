@@ -18,10 +18,6 @@ create_lookup <- function(key, digits = 7, seed = 123){
   # Sample so that each unique entry gets its own ID
   sample.vec <- sample(x = (10**(digits-1)):(10**digits-1), size = length(unique(key)), replace = FALSE)
 
-  # Check to see if there are any conflicting names
-  if(("original.ID" %in% names(dataset))|("replacement.ID" %in% names(dataset))){
-    warning("One of your columns is named original.ID or replacement.ID, which are used by this function. Function execution was not halted; to avoid ambiguities, it is recommended that you rename the original columns and try again")
-  }
   # Return a dataframe that contains 1 column with the original ID and 1 with the new unique id
   data.frame(original.ID= unique(key), replacement.ID = sample.vec, stringsAsFactors = FALSE)
 }
